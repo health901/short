@@ -1,0 +1,7 @@
+# RewriteEngine
+RewriteEngine On
+
+
+RewriteBase /short/
+
+RewriteRule ^(\w+)$     index.php?code=$1
