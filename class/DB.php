@@ -45,6 +45,9 @@ class DB {
 	return $this->error;
     }
 
+    public function escape($string){
+	return $this->mysqli->real_escape_string($string);
+    }
 }
 
 ?>

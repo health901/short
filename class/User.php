@@ -25,12 +25,12 @@ class User {
 
     public function verify() {
 	if (isset($_GET['u'])) {
-	    $username = mysql_real_escape_string($_GET['u']);
+	    $username = \Robin\Short\App::DB()->escape($_GET['u']);
 	}else{
 	    return false;
 	}
 	if (isset($_GET['p'])) {
-	    $password = mysql_real_escape_string($_GET['p']);
+	    $password = \Robin\Short\App::DB()->escape($_GET['p']);
 	}
 	if(!$username || !$password){
 	    return FALSE;

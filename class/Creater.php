@@ -29,7 +29,7 @@ class Creater {
 	    exit;
 	}
 
-	$url = mysql_real_escape_string($_GET['url']);
+	$url = $this->db->escape($_GET['url']);
 
 	if ($_code = $this->checkExist($url)) {
 	    $code = $_code;
