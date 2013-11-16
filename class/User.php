@@ -52,5 +52,3 @@ class User {
 	return $this->level;
     }
 }
-
-?>

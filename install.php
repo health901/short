@@ -58,5 +58,3 @@ function createPw() {
     }
     return $salt;
 }
-
-?>

@@ -49,5 +49,3 @@ class DB {
 	return $this->mysqli->real_escape_string($string);
     }
 }
-
-?>
